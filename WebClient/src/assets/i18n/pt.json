@@ -3,6 +3,7 @@
         "AppName": "Lista de Tarefas"
     },
 
+    "Categories": "Categorias",
     "Collapse Sidebar": "Fechar menu",
     "Search" : "Procurar",
     "Tasks": "Tarefas"

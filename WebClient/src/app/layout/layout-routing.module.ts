@@ -8,9 +8,8 @@ const routes: Routes = [
         component: LayoutComponent,
         children: [
             { path: '', redirectTo: 'list', pathMatch: 'prefix' },
-            { path: 'list', loadChildren: () => import('./todo-list/todo-list.module').then(m => m.ToDoListModule) }
-            //{ path: 'categories', loadChildren: () => import('./dashboard/dashboard.module').then(m => m.DashboardModule) }
-            
+            { path: 'list', loadChildren: () => import('./todo-list/todo-list.module').then(m => m.ToDoListModule) },
+            { path: 'categories', loadChildren: () => import('./categories/categories.module').then(m => m.CategoriesModule) }
         ]
     }
 ];
