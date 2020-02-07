@@ -26,3 +26,8 @@ D:\github\ToDoList\API\ToDo\obj\Debug\netcoreapp2.2\ToDo.AssemblyInfo.cs
 D:\github\ToDoList\API\ToDo\obj\Debug\netcoreapp2.2\ToDo.RazorTargetAssemblyInfo.cache
 D:\github\ToDoList\API\ToDo\obj\Debug\netcoreapp2.2\ToDo.dll
 D:\github\ToDoList\API\ToDo\obj\Debug\netcoreapp2.2\ToDo.pdb
+D:\github\ToDoList\API\ToDo\bin\Debug\netcoreapp2.2\ToDo.Domain.dll
+D:\github\ToDoList\API\ToDo\bin\Debug\netcoreapp2.2\ToDo.Repository.EF.dll
+D:\github\ToDoList\API\ToDo\bin\Debug\netcoreapp2.2\ToDo.Domain.pdb
+D:\github\ToDoList\API\ToDo\bin\Debug\netcoreapp2.2\ToDo.Repository.EF.pdb
+D:\github\ToDoList\API\ToDo\obj\Debug\netcoreapp2.2\ToDo.csproj.CopyComplete

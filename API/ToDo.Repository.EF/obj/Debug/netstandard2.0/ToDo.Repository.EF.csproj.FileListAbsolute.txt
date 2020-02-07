@@ -1,0 +1,12 @@
+D:\github\ToDoList\API\ToDo.Repository.EF\bin\Debug\netstandard2.0\ToDo.Repository.EF.deps.json
+D:\github\ToDoList\API\ToDo.Repository.EF\bin\Debug\netstandard2.0\ToDo.Repository.EF.dll
+D:\github\ToDoList\API\ToDo.Repository.EF\bin\Debug\netstandard2.0\ToDo.Repository.EF.pdb
+D:\github\ToDoList\API\ToDo.Repository.EF\bin\Debug\netstandard2.0\ToDo.Domain.dll
+D:\github\ToDoList\API\ToDo.Repository.EF\bin\Debug\netstandard2.0\ToDo.Domain.pdb
+D:\github\ToDoList\API\ToDo.Repository.EF\obj\Debug\netstandard2.0\ToDo.Repository.EF.csprojAssemblyReference.cache
+D:\github\ToDoList\API\ToDo.Repository.EF\obj\Debug\netstandard2.0\ToDo.Repository.EF.csproj.CoreCompileInputs.cache
+D:\github\ToDoList\API\ToDo.Repository.EF\obj\Debug\netstandard2.0\ToDo.Repository.EF.AssemblyInfoInputs.cache
+D:\github\ToDoList\API\ToDo.Repository.EF\obj\Debug\netstandard2.0\ToDo.Repository.EF.AssemblyInfo.cs
+D:\github\ToDoList\API\ToDo.Repository.EF\obj\Debug\netstandard2.0\ToDo.Repository.EF.csproj.CopyComplete
+D:\github\ToDoList\API\ToDo.Repository.EF\obj\Debug\netstandard2.0\ToDo.Repository.EF.dll
+D:\github\ToDoList\API\ToDo.Repository.EF\obj\Debug\netstandard2.0\ToDo.Repository.EF.pdb

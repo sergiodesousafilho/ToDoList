@@ -1,0 +1,12 @@
+D:\github\ToDoList\API\ToDo.Domain\bin\Debug\netstandard2.0\ToDo.Domain.deps.json
+D:\github\ToDoList\API\ToDo.Domain\bin\Debug\netstandard2.0\ToDo.Domain.dll
+D:\github\ToDoList\API\ToDo.Domain\bin\Debug\netstandard2.0\ToDo.Domain.pdb
+D:\github\ToDoList\API\ToDo.Domain\bin\Debug\netstandard2.0\System.ComponentModel.Annotations.dll
+D:\github\ToDoList\API\ToDo.Domain\bin\Debug\netstandard2.0\System.ComponentModel.Annotations.xml
+D:\github\ToDoList\API\ToDo.Domain\obj\Debug\netstandard2.0\ToDo.Domain.csprojAssemblyReference.cache
+D:\github\ToDoList\API\ToDo.Domain\obj\Debug\netstandard2.0\ToDo.Domain.csproj.CoreCompileInputs.cache
+D:\github\ToDoList\API\ToDo.Domain\obj\Debug\netstandard2.0\ToDo.Domain.AssemblyInfoInputs.cache
+D:\github\ToDoList\API\ToDo.Domain\obj\Debug\netstandard2.0\ToDo.Domain.AssemblyInfo.cs
+D:\github\ToDoList\API\ToDo.Domain\obj\Debug\netstandard2.0\ToDo.Domain.csproj.CopyComplete
+D:\github\ToDoList\API\ToDo.Domain\obj\Debug\netstandard2.0\ToDo.Domain.dll
+D:\github\ToDoList\API\ToDo.Domain\obj\Debug\netstandard2.0\ToDo.Domain.pdb
