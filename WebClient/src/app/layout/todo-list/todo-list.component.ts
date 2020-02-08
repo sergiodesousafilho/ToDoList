@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { routerTransition } from '../../router.animations';
+import { ToDoListService } from './todo-list.service';
 
 @Component({
     selector: 'app-todo-list',
@@ -8,11 +9,23 @@ import { routerTransition } from '../../router.animations';
     animations: [routerTransition()]
 })
 export class ToDoListComponent implements OnInit {
-    public alerts: Array<any> = [];
-    public sliders: Array<any> = [];
-
-    constructor() {
+    public todoLists: Array<any> = [];
+    
+    constructor(private service: ToDoListService) {
     }
 
-    ngOnInit() {}
+    ngOnInit() {
+        this.loadToDoLists();
+    }
+
+    private loadToDoLists() {
+        this.service.getFilters().subscribe(
+            (result) => {
+                this.todoLists = result.json();
+            },
+            (error) => {
+                // TODO: Tratar
+            }
+        );
+    }
 }

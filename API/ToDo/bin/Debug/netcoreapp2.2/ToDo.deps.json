@@ -28,7 +28,8 @@
           "Microsoft.AspNetCore.Razor.Design": "2.2.0",
           "Microsoft.NETCore.App": "2.2.0",
           "ToDo.Domain": "1.0.0",
-          "ToDo.Repository.EF": "1.0.0"
+          "ToDo.Repository.EF": "1.0.0",
+          "ToDo.Service": "1.0.0"
         },
         "runtime": {
           "ToDo.dll": {}
@@ -338,6 +339,18 @@
         },
         "compile": {
           "ToDo.Repository.EF.dll": {}
+        }
+      },
+      "ToDo.Service/1.0.0": {
+        "dependencies": {
+          "ToDo.Domain": "1.0.0",
+          "ToDo.Repository.EF": "1.0.0"
+        },
+        "runtime": {
+          "ToDo.Service.dll": {}
+        },
+        "compile": {
+          "ToDo.Service.dll": {}
         }
       },
       "Microsoft.AspNet.WebApi.Client/5.2.6": {
@@ -3392,6 +3405,11 @@
       "sha512": ""
     },
     "ToDo.Repository.EF/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ToDo.Service/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

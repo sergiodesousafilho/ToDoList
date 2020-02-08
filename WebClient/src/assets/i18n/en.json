@@ -2,6 +2,11 @@
     "header" : {
         "AppName": "TODO List"
     },
+    "todoLists": {
+        "TableColCategory": "Category",
+        "TableColDone": "Done",
+        "TableColName": "To Do Lists"
+    },
 
     "Categories": "Categories",
     "Collapse Sidebar": "Collapse Sidebar",

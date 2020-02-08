@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ToDo.Domain\ToDo.Domain.csproj" />
+    <ProjectReference Include="..\ToDo.Repository.EF\ToDo.Repository.EF.csproj" />
+  </ItemGroup>
+
+</Project>

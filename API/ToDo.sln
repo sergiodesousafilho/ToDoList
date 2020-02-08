@@ -13,7 +13,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Service", "Service", "{1918
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{D812019F-1871-459D-ACBE-FECF18E44212}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToDo.Repository.EF", "ToDo.Repository.EF\ToDo.Repository.EF.csproj", "{0440CFEE-D149-4F82-846D-DDC460985E2E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ToDo.Repository.EF", "ToDo.Repository.EF\ToDo.Repository.EF.csproj", "{0440CFEE-D149-4F82-846D-DDC460985E2E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToDo.Service", "ToDo.Service\ToDo.Service.csproj", "{25F89696-EBAE-4A20-A79E-0152DFF7DC67}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{0440CFEE-D149-4F82-846D-DDC460985E2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0440CFEE-D149-4F82-846D-DDC460985E2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0440CFEE-D149-4F82-846D-DDC460985E2E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{25F89696-EBAE-4A20-A79E-0152DFF7DC67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25F89696-EBAE-4A20-A79E-0152DFF7DC67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25F89696-EBAE-4A20-A79E-0152DFF7DC67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25F89696-EBAE-4A20-A79E-0152DFF7DC67}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -40,6 +46,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{2C62DC25-990B-4F2D-A7D9-E3CA40B197F1} = {C208D49C-39B1-47B4-9A79-68C73398132A}
 		{0440CFEE-D149-4F82-846D-DDC460985E2E} = {D812019F-1871-459D-ACBE-FECF18E44212}
+		{25F89696-EBAE-4A20-A79E-0152DFF7DC67} = {19184033-9237-41A6-9397-B5D7D7A7C669}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F87B7280-428A-4B0D-BECD-EDE972C4E678}

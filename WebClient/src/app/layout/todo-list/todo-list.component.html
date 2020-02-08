@@ -1,1 +1,16 @@
-lista de tarefas
+<table class="table table-striped table-hover">
+    <thead class="thead-default">
+        <tr>
+            <th>{{ 'todoLists.TableColName' | translate }}</th>
+            <th>{{ 'todoLists.TableColCategory' | translate }}</th>
+            <th>{{ 'todoLists.TableColDone' | translate }}</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let list of todoLists">
+            <td>{{ list.name }}</td>
+            <td>{{ list.categoryId }}</td>
+            <td>{{ list.done }}</td>
+        </tr>
+    </tbody>
+</table>

@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using ToDo.Domain.Entities;
+using ToDo.Domain.Interfaces;
 
 namespace ToDo.Controllers
 {
@@ -10,12 +12,18 @@ namespace ToDo.Controllers
     [ApiController]
     public class ToDoController : ControllerBase
     {
-        //// GET api/values
-        //[HttpGet]
-        //public ActionResult<IEnumerable<string>> Get()
-        //{
-        //    return new string[] { "value1", "value2" };
-        //}
+        private IToDoListService Service { get; set; }
+
+        public ToDoController(IToDoListService service)
+        {
+            this.Service = service;
+        }
+
+        [HttpGet]
+        public ActionResult<IEnumerable<ToDoList>> Get()
+        {
+            return this.Service.GetToDoList();
+        }
 
         //// GET api/values/5
         //[HttpGet("{id}")]

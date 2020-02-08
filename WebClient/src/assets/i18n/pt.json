@@ -2,6 +2,11 @@
     "header": {
         "AppName": "Lista de Tarefas"
     },
+    "todoLists": {
+        "TableColCategory": "Categoria",
+        "TableColDone": "Completa",
+        "TableColName": "Lista de tarefas"        
+    },
 
     "Categories": "Categorias",
     "Collapse Sidebar": "Fechar menu",

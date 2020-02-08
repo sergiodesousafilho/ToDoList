@@ -4462,6 +4462,20 @@
         "runtime": {
           "bin/placeholder/ToDo.Repository.EF.dll": {}
         }
+      },
+      "ToDo.Service/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "ToDo.Domain": "1.0.0",
+          "ToDo.Repository.EF": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ToDo.Service.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ToDo.Service.dll": {}
+        }
       }
     }
   },
@@ -12095,6 +12109,11 @@
       "type": "project",
       "path": "../ToDo.Repository.EF/ToDo.Repository.EF.csproj",
       "msbuildProject": "../ToDo.Repository.EF/ToDo.Repository.EF.csproj"
+    },
+    "ToDo.Service/1.0.0": {
+      "type": "project",
+      "path": "../ToDo.Service/ToDo.Service.csproj",
+      "msbuildProject": "../ToDo.Service/ToDo.Service.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -12103,7 +12122,8 @@
       "Microsoft.AspNetCore.Razor.Design >= 2.2.0",
       "Microsoft.NETCore.App >= 2.2.0",
       "ToDo.Domain >= 1.0.0",
-      "ToDo.Repository.EF >= 1.0.0"
+      "ToDo.Repository.EF >= 1.0.0",
+      "ToDo.Service >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -12141,6 +12161,9 @@
             },
             "D:\\github\\ToDoList\\API\\ToDo.Repository.EF\\ToDo.Repository.EF.csproj": {
               "projectPath": "D:\\github\\ToDoList\\API\\ToDo.Repository.EF\\ToDo.Repository.EF.csproj"
+            },
+            "D:\\github\\ToDoList\\API\\ToDo.Service\\ToDo.Service.csproj": {
+              "projectPath": "D:\\github\\ToDoList\\API\\ToDo.Service\\ToDo.Service.csproj"
             }
           }
         }

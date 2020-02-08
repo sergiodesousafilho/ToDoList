@@ -11,7 +11,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using ToDo.Domain.Interfaces;
 using ToDo.Repository.EF;
+using ToDo.Service;
 
 namespace ToDo
 {
@@ -28,7 +30,10 @@ namespace ToDo
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
-            services.AddDbContext<ToDoContext>(opts => opts.UseSqlServer(Configuration["ConnectionString:ToDoListDB"]));            
+            services.AddDbContext<ToDoContext>(opts => opts.UseSqlServer(Configuration["ConnectionString:ToDoListDB"]));
+            services.AddCors();
+            //ConfigureDependencies(services);
+            services.AddTransient<IToDoListService, ToDoListService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -45,7 +50,14 @@ namespace ToDo
             }
 
             app.UseHttpsRedirection();
+            app.UseCors(option => option.AllowAnyOrigin());
             app.UseMvc();
         }
+
+        //private IServiceCollection ConfigureDependencies(this IServiceCollection services)
+        //{
+        //    services.AddTransient<IToDoListService, ToDoListService>();
+        //    return services;
+        //}
     }
 }

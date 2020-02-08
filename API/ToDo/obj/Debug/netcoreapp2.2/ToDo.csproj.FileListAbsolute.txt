@@ -31,3 +31,5 @@ D:\github\ToDoList\API\ToDo\bin\Debug\netcoreapp2.2\ToDo.Repository.EF.dll
 D:\github\ToDoList\API\ToDo\bin\Debug\netcoreapp2.2\ToDo.Domain.pdb
 D:\github\ToDoList\API\ToDo\bin\Debug\netcoreapp2.2\ToDo.Repository.EF.pdb
 D:\github\ToDoList\API\ToDo\obj\Debug\netcoreapp2.2\ToDo.csproj.CopyComplete
+D:\github\ToDoList\API\ToDo\bin\Debug\netcoreapp2.2\ToDo.Service.dll
+D:\github\ToDoList\API\ToDo\bin\Debug\netcoreapp2.2\ToDo.Service.pdb

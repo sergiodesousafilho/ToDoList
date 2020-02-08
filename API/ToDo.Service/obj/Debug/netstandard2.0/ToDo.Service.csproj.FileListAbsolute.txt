@@ -1,0 +1,14 @@
+D:\github\ToDoList\API\ToDo.Service\bin\Debug\netstandard2.0\ToDo.Service.deps.json
+D:\github\ToDoList\API\ToDo.Service\bin\Debug\netstandard2.0\ToDo.Service.dll
+D:\github\ToDoList\API\ToDo.Service\bin\Debug\netstandard2.0\ToDo.Service.pdb
+D:\github\ToDoList\API\ToDo.Service\bin\Debug\netstandard2.0\ToDo.Domain.dll
+D:\github\ToDoList\API\ToDo.Service\bin\Debug\netstandard2.0\ToDo.Repository.EF.dll
+D:\github\ToDoList\API\ToDo.Service\bin\Debug\netstandard2.0\ToDo.Domain.pdb
+D:\github\ToDoList\API\ToDo.Service\bin\Debug\netstandard2.0\ToDo.Repository.EF.pdb
+D:\github\ToDoList\API\ToDo.Service\obj\Debug\netstandard2.0\ToDo.Service.csprojAssemblyReference.cache
+D:\github\ToDoList\API\ToDo.Service\obj\Debug\netstandard2.0\ToDo.Service.csproj.CoreCompileInputs.cache
+D:\github\ToDoList\API\ToDo.Service\obj\Debug\netstandard2.0\ToDo.Service.AssemblyInfoInputs.cache
+D:\github\ToDoList\API\ToDo.Service\obj\Debug\netstandard2.0\ToDo.Service.AssemblyInfo.cs
+D:\github\ToDoList\API\ToDo.Service\obj\Debug\netstandard2.0\ToDo.Service.csproj.CopyComplete
+D:\github\ToDoList\API\ToDo.Service\obj\Debug\netstandard2.0\ToDo.Service.dll
+D:\github\ToDoList\API\ToDo.Service\obj\Debug\netstandard2.0\ToDo.Service.pdb
