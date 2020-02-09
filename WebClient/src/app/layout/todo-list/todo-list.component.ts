@@ -9,6 +9,7 @@ import { ToDoListService } from './todo-list.service';
     animations: [routerTransition()]
 })
 export class ToDoListComponent implements OnInit {
+    public loadingData: boolean = true;
     public todoLists: Array<any> = [];
     
     constructor(private service: ToDoListService) {
@@ -19,9 +20,11 @@ export class ToDoListComponent implements OnInit {
     }
 
     private loadToDoLists() {
+        this.loadingData = true;
         this.service.getFilters().subscribe(
             (result) => {
                 this.todoLists = result.json();
+                this.loadingData = false;
             },
             (error) => {
                 // TODO: Tratar
