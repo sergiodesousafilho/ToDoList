@@ -17,5 +17,9 @@ namespace ToDo.Domain.Entities
         public int CategoryId { get; set; }
 
         public bool Done { get; set; }
+
+        public Category Category { get; set; }
+
+
     }
 }

@@ -3,6 +3,7 @@ using ToDo.Domain.Entities;
 using ToDo.Domain.Interfaces;
 using ToDo.Repository.EF;
 using System.Linq;
+using Microsoft.EntityFrameworkCore;
 
 namespace ToDo.Service
 {
@@ -16,8 +17,8 @@ namespace ToDo.Service
         }
     
         public ToDoList[] GetToDoList()
-        {            
-            return context.ToDoLists.ToArray();
+        {
+            return context.ToDoLists.Include(todo => todo.Category).ToArray();
         }
     }
 }

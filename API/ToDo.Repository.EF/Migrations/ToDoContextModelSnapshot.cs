@@ -14,7 +14,7 @@ namespace ToDo.Repository.EF.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "2.2.0-rtm-35687")
+                .HasAnnotation("ProductVersion", "2.2.1-servicing-10028")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
@@ -44,6 +44,8 @@ namespace ToDo.Repository.EF.Migrations
                     b.Property<string>("Name");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("CategoryId");
 
                     b.ToTable("ToDoLists");
                 });
@@ -82,6 +84,14 @@ namespace ToDo.Repository.EF.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Users");
+                });
+
+            modelBuilder.Entity("ToDo.Domain.Entities.ToDoList", b =>
+                {
+                    b.HasOne("ToDo.Domain.Entities.Category", "Category")
+                        .WithMany("ToDoLists")
+                        .HasForeignKey("CategoryId")
+                        .OnDelete(DeleteBehavior.Cascade);
                 });
 #pragma warning restore 612, 618
         }

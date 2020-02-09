@@ -20,9 +20,12 @@ namespace ToDo.Controllers
         }
 
         [HttpGet]
-        public ActionResult<IEnumerable<ToDoList>> Get()
+        public IActionResult Get()
         {
-            return this.Service.GetToDoList();
+            var lists = this.Service.GetToDoList();
+            var retVal = from ToDoList list in lists
+                         select new { Name = list.Name, CategoryName = list.Category.Name, Done = list.Done };
+            return Ok(retVal);
         }
 
         //// GET api/values/5
