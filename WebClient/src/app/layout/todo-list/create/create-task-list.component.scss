@@ -1,0 +1,14 @@
+.ng-invalid.ng-touched:not(form)
+{
+    border: 2px solid red;
+}
+
+label
+{
+    padding-top: 20px;
+}
+
+button
+{
+    margin-top: 20px;
+}

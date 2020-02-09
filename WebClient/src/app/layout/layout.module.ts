@@ -7,13 +7,15 @@ import { LayoutRoutingModule } from './layout-routing.module';
 import { LayoutComponent } from './layout.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { HeaderComponent } from './components/header/header.component';
+import { ToDoListModule } from './todo-list/todo-list.module';
 
 @NgModule({
     imports: [
         CommonModule,
         LayoutRoutingModule,
         TranslateModule,
-        NgbDropdownModule
+        NgbDropdownModule,
+        ToDoListModule
     ],
     declarations: [LayoutComponent, SidebarComponent, HeaderComponent]
 })

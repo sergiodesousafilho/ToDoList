@@ -1,0 +1,23 @@
+<div class="text-primary">
+    {{ 'todoLists.ScreenCreateNewList.NewTaskListTitle' | translate }}    
+</div>
+
+<form #f="ngForm" (ngSubmit)="onSubmit(f)">
+
+    <div class="form-group">
+        <label for="Name">{{ 'todoLists.ScreenCreateNewList.Name' | translate }}</label>
+        <input type="text" class="form-control" required name="Name" id="Name" placeholder="{{ 'todoLists.ScreenCreateNewList.NamePlaceholder' | translate }}" [(ngModel)]="newTaskList.name">
+    </div>
+
+    <div class="form-group">
+        <label for="Name">{{ 'todoLists.ScreenCreateNewList.Category' | translate }}</label>
+        <select class="form-control">
+            <option>1</option>
+            <option>2</option>
+        </select>
+    </div>
+
+    <button type="submit" class="btn btn-success">
+        {{ 'todoLists.ScreenCreateNewList.Save' | translate }}
+    </button>
+</form>

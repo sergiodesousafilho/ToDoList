@@ -2,11 +2,13 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { NgbCarouselModule, NgbAlertModule } from '@ng-bootstrap/ng-bootstrap';
 import { TranslateModule } from '@ngx-translate/core';
+import { FormsModule } from '@angular/forms';
 
 import { ToDoListRoutingModule } from './todo-list-routing.module';
 import { ToDoListComponent } from './todo-list.component';
 import { StatModule } from '../../shared';
 import { ToDoListService } from './todo-list.service';
+import { CreateTaskListComponent } from './create/create-task-list.component';
 
 @NgModule({
     imports: [
@@ -15,11 +17,14 @@ import { ToDoListService } from './todo-list.service';
         NgbAlertModule,
         ToDoListRoutingModule,
         StatModule,
-        TranslateModule
+        TranslateModule,
+        FormsModule
     ],
     declarations: [
-        ToDoListComponent        
+        ToDoListComponent,
+        CreateTaskListComponent     
     ],
+    exports: [ CreateTaskListComponent],
     providers: [
         ToDoListService
     ]

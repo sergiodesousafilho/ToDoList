@@ -1,4 +1,8 @@
- <div *ngIf="loadingData" class="please-wait-wrapper"> 
+<a [routerLink]="['/create-list']" class="btn btn-primary">
+    {{ 'todoLists.CreateTaskList' | translate }}
+</a>
+
+<div *ngIf="loadingData" class="please-wait-wrapper">
     <i class="fa fa-spinner fa-spin text-primary" aria-hidden="true"></i>
 </div>
 

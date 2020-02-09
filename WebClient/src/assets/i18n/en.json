@@ -3,10 +3,18 @@
         "AppName": "TODO List"
     },
     "todoLists": {
+        "CreateTaskList": "Create new task list",
         "NoListsFound": "No task lists registered yet",
         "TableColCategory": "Category",
         "TableColDone": "Done",
-        "TableColName": "To Do Lists"
+        "TableColName": "To Do Lists",
+        "ScreenCreateNewList": {
+            "Category": "Category",
+            "Name": "Name",
+            "NamePlaceholder": "New task list name",
+            "NewTaskListTitle": "New task list",            
+            "Save": "Save"
+        }
     },
 
     "Categories": "Categories",

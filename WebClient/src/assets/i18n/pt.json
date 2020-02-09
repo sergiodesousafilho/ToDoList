@@ -3,10 +3,18 @@
         "AppName": "Lista de Tarefas"
     },
     "todoLists": {
+        "CreateTaskList": "Criar lista de tarefas",
         "NoListsFound": "Nenhuma lista de tarefas foi criada ainda",
         "TableColCategory": "Categoria",
         "TableColDone": "Completa",
-        "TableColName": "Lista de tarefas"        
+        "TableColName": "Lista de tarefas",
+        "ScreenCreateNewList": {
+            "Category": "Categoria",
+            "Name": "Nome",
+            "NamePlaceholder": "Nome da nova lista de tarefas",
+            "NewTaskListTitle": "Nova lista de tarefas",
+            "Save": "Salvar"
+        }       
     },
 
     "Categories": "Categorias",
