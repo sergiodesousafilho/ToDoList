@@ -3,6 +3,7 @@
         "AppName": "Lista de Tarefas"
     },
     "todoLists": {
+        "NoListsFound": "Nenhuma lista de tarefas foi criada ainda",
         "TableColCategory": "Categoria",
         "TableColDone": "Completa",
         "TableColName": "Lista de tarefas"        

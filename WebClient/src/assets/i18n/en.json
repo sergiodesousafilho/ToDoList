@@ -3,6 +3,7 @@
         "AppName": "TODO List"
     },
     "todoLists": {
+        "NoListsFound": "No task lists registered yet",
         "TableColCategory": "Category",
         "TableColDone": "Done",
         "TableColName": "To Do Lists"
