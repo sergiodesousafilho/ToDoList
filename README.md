@@ -30,3 +30,5 @@ Estou enviando o desenvolvimento parcial que consegui fazer.
 * Executar então o comando npm start para executar o projeto localmente.
 
 * Abrir o navegador no endereço localhost:4200.
+
+* Para ver dados na tela de lista de tarefas será necessário fazer insert manualmente nas tabelas de categorias e lista de tarefas, as telas de criação não ficaram prontas. A entidade de uma tarefa específica não chegou a ser usada pois não deu tempo de fazer a tela de detalhes de uma lista de tarefas.
