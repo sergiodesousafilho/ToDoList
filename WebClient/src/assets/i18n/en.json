@@ -13,7 +13,9 @@
             "Name": "Name",
             "NamePlaceholder": "New task list name",
             "NewTaskListTitle": "New task list",            
-            "Save": "Save"
+            "Save": "Save",
+            "TheFieldCategoryIsEmpty": "The field 'Category' must have a value",
+            "TheFieldNameIsEmpty": "The field 'Name' must have a value"
         }
     },
 

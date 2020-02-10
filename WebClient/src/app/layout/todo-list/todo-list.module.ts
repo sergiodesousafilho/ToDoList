@@ -9,6 +9,7 @@ import { ToDoListComponent } from './todo-list.component';
 import { StatModule } from '../../shared';
 import { ToDoListService } from './todo-list.service';
 import { CreateTaskListComponent } from './create/create-task-list.component';
+import { CreateTaskListService } from './create/create-task-list.service';
 
 @NgModule({
     imports: [
@@ -22,11 +23,12 @@ import { CreateTaskListComponent } from './create/create-task-list.component';
     ],
     declarations: [
         ToDoListComponent,
-        CreateTaskListComponent     
+        CreateTaskListComponent        
     ],
     exports: [ CreateTaskListComponent],
     providers: [
-        ToDoListService
+        ToDoListService,
+        CreateTaskListService
     ]
 })
 export class ToDoListModule {}

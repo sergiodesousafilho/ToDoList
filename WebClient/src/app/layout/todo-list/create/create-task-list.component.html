@@ -2,19 +2,33 @@
     {{ 'todoLists.ScreenCreateNewList.NewTaskListTitle' | translate }}    
 </div>
 
-<form #f="ngForm" (ngSubmit)="onSubmit(f)">
+<div *ngIf="loadingAvailableCategories" class="please-wait-wrapper">
+    <i class="fa fa-spinner fa-spin text-primary" aria-hidden="true"></i>
+</div>
 
+<form #f="ngForm" (ngSubmit)="onSubmit(f)">
     <div class="form-group">
         <label for="Name">{{ 'todoLists.ScreenCreateNewList.Name' | translate }}</label>
-        <input type="text" class="form-control" required name="Name" id="Name" placeholder="{{ 'todoLists.ScreenCreateNewList.NamePlaceholder' | translate }}" [(ngModel)]="newTaskList.name">
+        <input #fName="ngModel" type="text" class="form-control" required name="Name" id="Name" placeholder="{{ 'todoLists.ScreenCreateNewList.NamePlaceholder' | translate }}" [(ngModel)]="newTaskList.name">
+        <div *ngIf="(!fName.valid) && (f.submitted || fName.touched)">
+            <small style="color: darkred">
+                {{ 'todoLists.ScreenCreateNewList.TheFieldNameIsEmpty' | translate }}                
+            </small>
+        </div>
     </div>
 
     <div class="form-group">
         <label for="Name">{{ 'todoLists.ScreenCreateNewList.Category' | translate }}</label>
-        <select class="form-control">
-            <option>1</option>
-            <option>2</option>
+        <select #fCategory="ngModel" class="form-control" name="Category" name="Category" required [(ngModel)]="selectedCategory">
+            <option *ngFor="let category of availableCategories" [value]="category.id" [selected]="category.id == selectedCategory">
+                {{ category.name }}
+            </option>            
         </select>
+        <div *ngIf="(!fCategory.valid) && (f.submitted || fCategory.touched)">
+            <small style="color: darkred">
+                {{ 'todoLists.ScreenCreateNewList.TheFieldCategoryIsEmpty' | translate }}                
+            </small>
+        </div>
     </div>
 
     <button type="submit" class="btn btn-success">

@@ -5,9 +5,8 @@ using ToDo.Domain.Entities;
 
 namespace ToDo.Domain.Interfaces
 {
-    public interface IToDoListService
+    public interface ICategoryService
     {
-        ToDoList[] GetToDoList();
-        void CreateToDoList(ToDoList newList);
+        Category[] GetCategories();
     }
 }

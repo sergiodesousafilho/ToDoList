@@ -20,6 +20,12 @@ namespace ToDo.Service
         {
             return context.ToDoLists.Include(todo => todo.Category).ToArray();
         }
+
+        public void CreateToDoList(ToDoList newList)
+        {
+            context.ToDoLists.Add(newList);
+            context.SaveChanges();
+        }
     }
 }
 ;

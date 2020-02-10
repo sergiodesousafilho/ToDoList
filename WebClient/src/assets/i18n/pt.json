@@ -13,7 +13,9 @@
             "Name": "Nome",
             "NamePlaceholder": "Nome da nova lista de tarefas",
             "NewTaskListTitle": "Nova lista de tarefas",
-            "Save": "Salvar"
+            "Save": "Salvar",
+            "TheFieldCategoryIsEmpty": "O campo 'Categoria' deve ser preenchido",
+            "TheFieldNameIsEmpty": "O campo 'Nome' deve ser preenchido"
         }       
     },
 

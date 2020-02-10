@@ -32,8 +32,9 @@ namespace ToDo
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
             services.AddDbContext<ToDoContext>(opts => opts.UseSqlServer(Configuration["ConnectionString:ToDoListDB"]));
             services.AddCors();
-            //ConfigureDependencies(services);
+            
             services.AddTransient<IToDoListService, ToDoListService>();
+            services.AddTransient<ICategoryService, CategoryService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -54,10 +55,6 @@ namespace ToDo
             app.UseMvc();
         }
 
-        //private IServiceCollection ConfigureDependencies(this IServiceCollection services)
-        //{
-        //    services.AddTransient<IToDoListService, ToDoListService>();
-        //    return services;
-        //}
+        
     }
 }
